@@ -7,52 +7,73 @@
       src="https://kit.fontawesome.com/3e0bd80672.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="ststus-bar__column"></div>
-      <span class="status-bar__clock">14:20</span>
-      <div class="ststus-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">75%</span>
-      <i class="fas fa-battery-three-quarters"></i>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="index.html" class="header__back-button">
-          <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-        <h1 class="header__title">ADER</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <div class="header__icon">
-          <i class="fas fa-bars"></i>
+  <body class="chats-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">14:20</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">75%</span>
+          <i class="fas fa-battery-three-quarters"></i>
         </div>
       </div>
-    </header>
-    <main class="class__chat">
+      <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-button">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">ADER</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
+    </div>
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, April 2, 2020</span>
         <li class="incomming__message message">
-          <img src="images/ader.jpg" class="g-avatar message__avatar" />
+          <img src="images/ader.jpg" class="m-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author">ADER</span>
-            <div class="message_bubble">
+            <span class="message__bubble">
               응 연습이야~~
-            </div>
+            </span>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-        <li class="incomming__message message">
+        <li class="sent__message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <div class="message_bubble">
+            <div class="message__bubble">
+              응??? tmi~~
+            </div>
+          </div>
+        </li>
+        <li class="incomming__message message">
+          <img src="images/ader.jpg" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">ADER</span>
+            <span class="message__bubble">
+              응 연습이야~~
+            </span>
+          </div>
+        </li>
+        <li class="sent__message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
               응??? tmi~~
             </div>
           </div>
@@ -63,10 +84,15 @@
       <div class="chat__write-column">
         <i class="fas fa-plus-square"></i>
       </div>
+
       <div class="chat__write-column">
-        <input type="text" placeholder="Send message" class="chat__write-input
+        <input
+          type="text"
+          placeholder="Send message"
+          class="chat__write-input"
         />
       </div>
+
       <div class="chat__write-column">
         <span class="chat__write-icon">
           <i class="fas fa-smile-wink"></i>
