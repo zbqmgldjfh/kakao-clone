@@ -1,3 +1,4 @@
-# kakao-clone
+# kakaotalk-clone
 
-kakao Desktop App Clone!
+## kakao Desktop App Clone!
+
