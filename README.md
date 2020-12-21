@@ -1,4 +1,6 @@
-# kakaotalk-clone
+# kaka-clone
 
-## kakao Desktop App Clone!
+### kakao Desktop App Clone!
 
+> 주요기능
+1) 
